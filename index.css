@@ -1,0 +1,192 @@
+/* Google Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+/* Page layout */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+.hero {
+    background: #6943fe;
+    color: white;
+    padding: 30px;   
+    width: 75%;
+    margin: 25px auto;
+    border-radius: 5px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px auto;
+    width: 75%;
+    height: 130px;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+/* Typography */
+
+h1 {
+    margin: 31px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6b6488;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    transition: .4s;
+}
+
+/* Inputs, buttons and switches */
+
+#input, .btn-primary, .btn-secondary {
+    display: block;
+    margin: auto;
+}
+
+#input {
+    background: none;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    color: white;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    padding: 5px 0px;
+    width: 117px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .7;
+}
+
+.btn {
+    line-height: 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    color: #3D3D3D;
+}
+
+.btn-secondary {
+    color: #FFFFFF;
+    background: #6b6488;
+    border: 1px solid #B295FF;
+    padding: 10px 37px;
+}
+
+/* Theme switch styling */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B295FF;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #1F2937;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #1F2937;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Dark mode styles */
+
+.dark {
+    background: #1F2937;
+}
+
+.dark .section {
+    background: #273549;
+    }
+
+.dark p {
+    color: white;
+}

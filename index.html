@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="hero">
+            <!-- Rounded switch -->
+            <label class="switch">
+            <input type="checkbox" id="toggleThemeBtn">
+            <span class="slider round"></span>
+            </label>
+            <!-- End rounded switch -->
+            <h1>Metric/Imperial Unit Conversion</h1>
+                <input id="input" type="number" placeholder="0">
+            <div class="btn-wrapper">
+                <button id="convert-btn" class="btn btn-primary">Convert</button>
+                <button id="reset-btn" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Length (Meter/Feet)</h3>
+            <p id="length-el">0 meters = 0 feet | 0 feet = 0 meters</p>
+        </div>
+        <div class="section">
+            <h3>Volume (Liters/Gallon)</h3>
+            <p id="volume-el">0 liters = 0 gallons | 0 gallons = 0 liters</p>
+        </div>
+        <div class="section">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="mass-el">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
